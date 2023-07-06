@@ -1,38 +1,303 @@
-.App {
+@import url('./assets/fonts.css');
+
+:root{
+  --one-color:#FF8551;
+  --two-color:#FAF0E4;
+  --three-color:#9BCDD2;
+  --gradient:var(--one-color),var(--two-color), var(--one-color);
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+
+}
+
+.profilePicture{
+  content: url("../src/assets/images/profile-picture.jpg");
+  width: auto;
+}
+
+.testImage{
+  content: url('../src/assets/images/todo-project.png');
+}
+
+
+
+body{
+  padding: 0px;
+  margin:0px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+section{
+  border: solid;
+  height: 100dvh;
+  padding: 0;
+  width: 100%;
+}
+a,
+a:visited{
+  text-decoration: none;
+  width: fit-content;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  width: 70%;
+  padding-bottom: 5rem;
+  margin: auto;
+
+}
+
+.pressable{
+  cursor: pointer;
+}
+
+.pressable:active{
+  transform: translateY(2px);
+}
+
+.container{
+  min-width: 80dvw;
+  height: 100%;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  align-items: center;
+}
+
+.header{
+  font-size: 2.5em;
+  font-weight: bold;
+
+  
+}
+
+.intro-section{
+  background-image: url(../src/assets/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-section .wrapper{
+  height: 100%;
+}
+
+.center {
+  margin: auto;
+ 
+
+}
+
+
+.center-text{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.introduction-layout{
+  gap: 2rem;
+  width: 50%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.intro-text-box{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;  
+  
+}
+
+.main-text{
+  font-size: 3dvw;
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.profile-container{
+  height: 50%;
+  background-color: var(--two-color);
+  padding: 20px;
+  position: relative;
+  max-width: 600px;
+  border-radius: 25px;
+  top: 25%;
+
+}
+
+.profile-box{
+  gap: .5em;
+  height: 100%;
+  width: 100%;
+}
+
+
+.profile-description-box{
+  font-size: 1em;
+  gap: 1em;
+
+}
+
+.profile-img{
+border-radius: 15%;
+}
+
+.icon-group{
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.icon-link{
+  min-width: 3dvw;
+  height: fit-content;
+}
+
+.profile-skills{
+  width: 100%;
+  
+}
+
+.skills{
+  width: 100%;
+  gap: .25em;
+  flex-wrap: wrap;
+  font-size: 1 dvw;
+}
+
+.profile-skills li{
+  width: fit-content;
+  background: var(--one-color);
+}
+
+
+/* Project Section */
+.project-section{
+  background: linear-gradient(var(--gradient));
+  margin: 0;
+  height: fit-content;
+}
+
+
+.project-box{
+  width: 70%;
+  border: solid;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px 0px;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  background: var(--two-color);
+  padding-bottom: 2em;
+
+  min-height: fit-content;
+} 
+
+.project-box img{
+  max-width: 100%;  
+}
+
+.project-description{
+  width: 75%;
+}
+
+.project-link-box{
+  width: 50%;
+  height: 1em;
+}
+
+.button-style{
+  background-color: var(--three-color);
+  width: 50%;
+  height: 2.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  box-shadow:lightgray 2.5px 2.5px;
+  margin: 5px;
+}
+
+.button-style:hover{
+  background-color: var(--one-color);
+  color:white;
+}
+.button-style:active{
+  transform: translateY(2px);
+  box-shadow: lightgray .5px .5px;
+}
+
+.about-section{
+  background-color: var(--two-color);
+  height: fit-content;
+}
+
+
+.contact-box{
+  height: 10%;
+  background: linear-gradient(180deg,var(--one-color), var(--one-color));
+}
+
+.contact-content{
+  color: black;
+  font-weight: 900;
+  font-size: 1.25dvw;
+}
+
+.contact-box:hover .contact-content{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-section{
+  background: var(--two-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-control{
+  position: relative;
+  gap: 1em;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.form-control .button-style{
+  width: 100%;
+}
+@media (max-width:600px) {
+  .profile-box{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .profilePicture{
+    width: 50%;
+    border-radius: 50%
+    
+  }
+  .icon-group{
+    gap:0;
+  }
+  .icon-link{
+    min-width: 8dvw;
+  }
+  .project-layout .wrapper{
+    width: 100%;
+  }
+  .contact-section{
+    height: fit-content;
   }
 }
