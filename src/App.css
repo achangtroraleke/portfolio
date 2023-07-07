@@ -163,6 +163,7 @@ border-radius: 15%;
 .icon-group{
   gap: 3rem;
   justify-content: space-evenly;
+  width: fit-content;
 }
 
 .icon-link{
@@ -289,7 +290,7 @@ border-radius: 15%;
     
   }
   .icon-group{
-    gap:0;
+    margin: auto;
   }
   .icon-link{
     min-width: 8dvw;
@@ -299,5 +300,9 @@ border-radius: 15%;
   }
   .contact-section{
     height: fit-content;
+  }
+  .profile-container{
+    height: fit-content;
+    top: 5%;
   }
 }
