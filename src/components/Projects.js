@@ -50,10 +50,10 @@ const ProjectSection = ()=>{
                         <Swiper
                         // install Swiper modules
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
+                  
                         style={{
                             "--swiper-navigation-color": "#000",
                             "--swiper-navigation-size": "55px",
-                            
                             "--swiper-theme-color":"white"
                             
                             

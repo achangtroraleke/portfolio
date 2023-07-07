@@ -8,10 +8,7 @@
 
 }
 
-::-webkit-scrollbar {
-  width: 0px;
 
-}
 
 .profilePicture{
   content: url("../src/assets/images/profile-picture.jpg");
@@ -21,8 +18,6 @@
 .testImage{
   content: url('../src/assets/images/todo-project.png');
 }
-
-
 
 body{
   padding: 0px;
@@ -40,6 +35,9 @@ a,
 a:visited{
   text-decoration: none;
   width: fit-content;
+  margin: 0;
+  padding:0;
+  height: fit-content;
 }
 
 ul{
@@ -85,8 +83,6 @@ ul{
 .header{
   font-size: 2.5em;
   font-weight: bold;
-
-  
 }
 
 .intro-section{
@@ -102,10 +98,7 @@ ul{
 
 .center {
   margin: auto;
- 
-
 }
-
 
 .center-text{
   text-align: center;
@@ -137,10 +130,10 @@ ul{
   background-color: var(--two-color);
   padding: 20px;
   position: relative;
-  max-width: 600px;
+  max-width: 900px;
   border-radius: 25px;
   top: 25%;
-
+  
 }
 
 .profile-box{
@@ -162,18 +155,18 @@ border-radius: 15%;
 
 .icon-group{
   gap: 3rem;
-  justify-content: space-evenly;
   width: fit-content;
+  align-items: baseline;
 }
 
 .icon-link{
-  min-width: 3dvw;
- 
+  align-items: center;
+  gap: .5em;
+  font-weight: 900;
 }
 
 .profile-skills{
   width: 100%;
-  
 }
 
 .skills{
@@ -206,7 +199,6 @@ border-radius: 15%;
   overflow: hidden;
   background: var(--two-color);
   padding-bottom: 2em;
-
   min-height: fit-content;
 } 
 
@@ -278,7 +270,7 @@ border-radius: 15%;
 .form-control .button-style{
   width: 100%;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
   .profile-box{
     flex-direction: column;
     align-items: center;
@@ -293,7 +285,7 @@ border-radius: 15%;
     margin: auto;
   }
   .icon-link{
-    min-width: 6dvw;
+    width: 8dvw;
   }
   .project-layout .wrapper{
     width: 100%;
@@ -303,7 +295,11 @@ border-radius: 15%;
   }
   .profile-container{
     height: fit-content;
-    top: 5%;
+   ;
     min-width: fit-content;
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+    display: none !important;
   }
 }
