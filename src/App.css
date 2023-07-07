@@ -278,7 +278,7 @@ border-radius: 15%;
 .form-control .button-style{
   width: 100%;
 }
-@media (max-width:600px) {
+@media (max-width:800px) {
   .profile-box{
     flex-direction: column;
     align-items: center;
@@ -286,7 +286,7 @@ border-radius: 15%;
   }
   .profilePicture{
     width: 50%;
-    border-radius: 50%
+    border-radius: 25%
     
   }
   .icon-group{
