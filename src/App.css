@@ -168,7 +168,7 @@ border-radius: 15%;
 
 .icon-link{
   min-width: 3dvw;
-  height: fit-content;
+ 
 }
 
 .profile-skills{
@@ -180,7 +180,7 @@ border-radius: 15%;
   width: 100%;
   gap: .25em;
   flex-wrap: wrap;
-  font-size: 1 dvw;
+ 
 }
 
 .profile-skills li{
@@ -285,7 +285,7 @@ border-radius: 15%;
     gap: 0;
   }
   .profilePicture{
-    width: 50%;
+    width: 25%;
     border-radius: 25%
     
   }
@@ -293,7 +293,7 @@ border-radius: 15%;
     margin: auto;
   }
   .icon-link{
-    min-width: 8dvw;
+    min-width: 6dvw;
   }
   .project-layout .wrapper{
     width: 100%;
@@ -304,5 +304,6 @@ border-radius: 15%;
   .profile-container{
     height: fit-content;
     top: 5%;
+    min-width: fit-content;
   }
 }
