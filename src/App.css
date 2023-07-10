@@ -258,6 +258,7 @@ border-radius: 15%;
 
 .contact-section{
   background: var(--two-color);
+  height: fit-content;
 }
 
 .form-control{
