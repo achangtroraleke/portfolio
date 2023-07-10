@@ -130,7 +130,7 @@ ul{
   background-color: var(--two-color);
   padding: 20px;
   position: relative;
-  max-width: 900px;
+  max-width: fit-content;
   border-radius: 25px;
   top: 25%;
   
