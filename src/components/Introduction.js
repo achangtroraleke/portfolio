@@ -66,7 +66,11 @@ const IntroductionSection = ()=>{
                             </ul>
                         </div>
                          
-                  
+                        <div className="contact-content ">
+                                Contact Me
+                                <h5 className="no-margin">Email: atachart.changtroraleke@gmail.com</h5>
+                                <h5 className="no-margin">Phone: (516) 492-7523</h5>
+                        </div>
                     </div>
                 </div>
               
