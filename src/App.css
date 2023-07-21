@@ -269,6 +269,15 @@ border-radius: 15%;
   grid-area: 1rem;
 }
 
+.contact-info{
+  gap: 2rem;
+  justify-content: start;
+}
+
+.title{
+  font-size: 3rem;
+}
+
 .contact div{
   width: 40%;
   background:#9BCDD2;
