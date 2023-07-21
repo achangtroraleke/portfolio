@@ -18,8 +18,6 @@ const Contact = () =>{
 
     return (
         <section className="contact-section">
-            <h2 className="center-text">Contact Me</h2>
-        
             <div className="wrapper">
                 
                 <p className="main-text center-text">Lets work together!</p>

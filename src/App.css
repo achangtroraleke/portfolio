@@ -26,7 +26,6 @@ body{
   overflow-x: hidden;
 }
 section{
-  border: solid;
   height: 100dvh;
   padding: 0;
   width: 100%;
@@ -127,11 +126,10 @@ ul{
 
 .profile-container{
   height: 50%;
-  background-color: var(--two-color);
   padding: 20px;
   position: relative;
-  max-width: fit-content;
-  border-radius: 25px;
+  max-width: 60%;
+
   top: 25%;
   
 }
@@ -139,12 +137,14 @@ ul{
 .profile-box{
   gap: .5em;
   height: 100%;
-  width: 100%;
+  width: fit-content;
+  justify-content: start;
 }
 
 
 .profile-description-box{
   font-size: 1em;
+  font-weight: 600;
   gap: 1em;
 
 }
@@ -167,18 +167,21 @@ border-radius: 15%;
 
 .profile-skills{
   width: 100%;
+  position: relative;
 }
 
 .skills{
   width: 100%;
   gap: .25em;
   flex-wrap: wrap;
- 
+  
 }
 
 .profile-skills li{
   width: fit-content;
-  background: var(--one-color);
+  background: var(--two-color);
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 
@@ -211,13 +214,11 @@ border-radius: 15%;
 }
 
 .project-link-box{
-  width: 50%;
-  height: 1em;
+  position: relative;
 }
 
 .button-style{
   background-color: var(--three-color);
-  width: 50%;
   height: 2.5em;
   border-radius: 5px;
   font-weight: bold;
@@ -235,9 +236,20 @@ border-radius: 15%;
   box-shadow: lightgray .5px .5px;
 }
 
+
+.button-group{
+  gap: 1rem;
+  justify-content: center;
+  position: relative;
+}
+
 .about-section{
-  background-color: var(--two-color);
+  background-color: var(--three-color);
   height: fit-content;
+}
+
+.about-section p{
+  font-size: 2rem;
 }
 
 
@@ -303,4 +315,36 @@ border-radius: 15%;
   .swiper-button-prev{
     display: none !important;
   }
+}
+
+
+.custom-shape-divider-bottom-1689963457 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689963457 svg {
+  position: relative;
+  display: block;
+  width: calc(171% + 1.3px);
+  height: 123px;
+}
+
+.custom-shape-divider-bottom-1689963457 .shape-fill {
+  fill: #FF8551;
+}
+
+.spacert{
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url('./assets/icons/layered-waves.svg');
 }

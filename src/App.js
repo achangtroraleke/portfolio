@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex-column">
      
       <IntroductionSection/>
       <AboutSection/>

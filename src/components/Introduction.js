@@ -22,7 +22,7 @@ const skills = [
 const IntroductionSection = ()=>{
 
     return(
-        <section className="intro-section">
+        <section className="intro-section layer1">
            <div className="wrapper ">
             <div className="profile-container flex-column center">
                 <div className="profile-box flex ">
