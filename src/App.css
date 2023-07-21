@@ -135,9 +135,9 @@ ul{
 }
 
 .profile-box{
-  gap: .5em;
+  gap: 2em;
   height: 100%;
-  width: fit-content;
+  width: 100%;
   justify-content: start;
 }
 
@@ -284,6 +284,9 @@ border-radius: 15%;
   width: 100%;
 }
 @media (max-width:1000px) {
+  section{
+    height: fit-content;
+  }
   .profile-box{
     flex-direction: column;
     align-items: center;
@@ -314,6 +317,15 @@ border-radius: 15%;
   .swiper-button-next,
   .swiper-button-prev{
     display: none !important;
+  }
+  .main-text{
+    font-size: 2rem;
+  }
+  .profilePicture{
+    width: 70%;
+  }
+  .contact-content{
+    font-size: 1rem;
   }
 }
 
