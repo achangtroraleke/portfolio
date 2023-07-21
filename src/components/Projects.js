@@ -31,7 +31,7 @@ const ProjectSection = ()=>{
             description:'World News is a web applicatio, where you can catch up on events that are occuring around the world. It pulls news data from a News API ensuring that the user is getting the most recent news.',
             image:"world-news",
             link:'https://github.com/achangtroraleke/World-News.git',
-            demo:""
+            demo:"https://achangtroraleke.github.io/World-News/"
 
         },
 
