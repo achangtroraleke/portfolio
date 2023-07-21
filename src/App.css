@@ -39,6 +39,12 @@ a:visited{
   height: fit-content;
 }
 
+hr{
+  width: 1px;
+  background-color: gray;
+  margin: 0px;
+}
+
 ul{
   text-decoration: none;
   list-style: none;
@@ -258,6 +264,18 @@ border-radius: 15%;
   background: linear-gradient(180deg,var(--one-color), var(--one-color));
 }
 
+.contact{
+  justify-content: space-evenly;
+  grid-area: 1rem;
+}
+
+.contact div{
+  width: 40%;
+  background:#9BCDD2;
+  padding: 25px;
+  border-radius: 15px;
+}
+
 .contact-content{
   color: black;
   font-weight: 900;
@@ -273,15 +291,25 @@ border-radius: 15%;
   height: fit-content;
 }
 
+
 .form-control{
   position: relative;
   gap: 1em;
   justify-content: center;
-  max-width: 600px;
+  width: 100%;
+}
+.form-control input{
+  font-size: 1.25rem;
 }
 
 .form-control .button-style{
   width: 100%;
+  background-color: #FAF0E4;
+}
+
+.form-control .button-style:hover{
+  
+  color: black;
 }
 @media (max-width:1000px) {
   section{
@@ -326,6 +354,13 @@ border-radius: 15%;
   }
   .contact-content{
     font-size: 1rem;
+  }
+  .contact{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact div{
+    width: 100%;
   }
 }
 

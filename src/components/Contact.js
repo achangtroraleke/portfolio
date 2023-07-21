@@ -21,6 +21,9 @@ const Contact = () =>{
             <div className="wrapper">
                 
                 <p className="main-text center-text">Lets work together!</p>
+                <div className="flex contact">
+                <div className="form-box">
+                <h2 className="">Email Me:</h2>
                 <form ref={form} onSubmit={sendEmail} className="form-control flex-column center">
                     <input type="text" placeholder="Full Name" name='user_name' required/>
                     <input type="emali" placeholder="Email" name='user_email' required/>
@@ -28,6 +31,17 @@ const Contact = () =>{
                     <textarea name='message' cols='30' rows='10' required/>
                     <button className="button-style" type="submit">Send Mail</button>
                </form>
+               </div>
+               <hr/>
+                <div className="flex-column">
+                                <h1 className="">Contact Info:</h1>
+                                <h1 className="no-margin">Email: atachart.changtroraleke@gmail.com</h1>
+                                <h1 className="no-margin">Phone: (516) 492-7523</h1>
+                        </div>
+                       
+               
+                </div>
+         
             </div> 
         </section>
     )
