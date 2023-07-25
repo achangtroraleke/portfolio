@@ -32,12 +32,7 @@ const Contact = () =>{
                     <button className="button-style" type="submit">Send Mail</button>
                </form>
                </div>
-               <hr/>
-                <div className="flex-column contact-info">
-                                <h1 className="title center-text">Contact Info:</h1>
-                                <h1 className="no-margin">Email: atachart.changtroraleke@gmail.com</h1>
-                                <h1 className="no-margin">Phone: (516) 492-7523</h1>
-                        </div>
+           
                        
                
                 </div>

@@ -56,7 +56,7 @@ const IntroductionSection = ()=>{
                 
                    
                         <div className="profile-skills">
-                            <h3 className="no-margin">Skills:</h3>
+                            <h3 className="no-margin main-text">Skills:</h3>
                             <ul className="skills flex">
                                 {skills.map((skill, index)=>{
                                     return(
