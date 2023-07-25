@@ -1,13 +1,13 @@
 import React from "react";
 
-const onButtonClick = () => {
+const onButtonClick = () =>{
     // using Java Script method to get PDF file
-    fetch('resume.pdf').then(response => {
+    fetch('Resume_Web.pdf').then(response => {
         response.blob().then(blob => {
             const fileURL = window.URL.createObjectURL(blob);
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'James Changtroraleke.pdf';
+            alink.download = 'Resume.pdf';
             alink.click();
         })
     })
